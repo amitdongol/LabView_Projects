@@ -119,7 +119,6 @@
             <Item Name="Wait On ActiveX Event.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Wait On ActiveX Event.vi"/>
             <Item Name="OccFireType.ctl" Type="VI" URL="/&lt;vilib&gt;/platform/ax-events.llb/OccFireType.ctl"/>
             <Item Name="Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Waveform Array To Dynamic.vi"/>
-            <Item Name="Spectrometer Status.GBL" Type="Document" URL="/&lt;vilib&gt;/Monochromator HR 460 VI&apos;s/lvmonos_LV7.1_all GPIB and RS232/lvmonos_LV7.1_all GPIB and RS232/Isa_user.llb/Spectrometer Status.GBL"/>
          </Item>
          <Item Name="instr.lib" Type="Folder">
             <Item Name="LSCI 330 Initialize.vi" Type="VI" URL="/&lt;instrlib&gt;/LakeShore Temperature Controller/lsci330/lsci330.llb/LSCI 330 Initialize.vi"/>
@@ -132,11 +131,11 @@
             <Item Name="LSCI 330 Reset.vi" Type="VI" URL="/&lt;instrlib&gt;/LakeShore Temperature Controller/lsci330/lsci330.llb/LSCI 330 Reset.vi"/>
             <Item Name="LSCI 330 Utility Clean Up Initialize.vi" Type="VI" URL="/&lt;instrlib&gt;/LakeShore Temperature Controller/lsci330/Lsci330u.llb/LSCI 330 Utility Clean Up Initialize.vi"/>
          </Item>
-         <Item Name="Spectrometer Status.GBL" Type="VI" URL="Sub VIs/lvmonos_LV7.1_all GPIB and RS232/Isa_user.llb/Spectrometer Status.GBL"/>
-         <Item Name="SPECTROMETER SETUP.GBL" Type="VI" URL="Sub VIs/lvmonos_LV7.1_all GPIB and RS232/Isa_user.llb/SPECTROMETER SETUP.GBL"/>
          <Item Name="Command Set Database.GBL" Type="VI" URL="Sub VIs/lvmonos_LV7.1_all GPIB and RS232/Isa_comm.llb/Command Set Database.GBL"/>
          <Item Name="Advapi32.dll" Type="Document" URL="Advapi32.dll"/>
          <Item Name="kernel32.dll" Type="Document" URL="kernel32.dll"/>
+         <Item Name="RegOpen" Type="VI" URL="RegOpen"/>
+         <Item Name="systemexec" Type="VI" URL="systemexec"/>
       </Item>
       <Item Name="Build Specifications" Type="Build">
          <Item Name="AD-Spectrometry" Type="EXE">
@@ -146,6 +145,7 @@
             <Property Name="App_fileType" Type="Int">1</Property>
             <Property Name="App_fileVersion.major" Type="Int">1</Property>
             <Property Name="App_fileVersion.minor" Type="Int">2</Property>
+            <Property Name="App_fileVersion.patch" Type="Int">1</Property>
             <Property Name="App_INI_aliasGUID" Type="Str">{C980CB80-BD9D-465F-9058-B0B5F7F0B24F}</Property>
             <Property Name="App_INI_GUID" Type="Str">{44EC88D8-273D-4EA6-845C-E409E50AF721}</Property>
             <Property Name="App_internalName" Type="Str">AD-Spectrometry</Property>
@@ -153,17 +153,17 @@
             <Property Name="App_productName" Type="Str">AD-Spectrometry</Property>
             <Property Name="Bld_buildSpecDescription" Type="Str">To perform Four Wave Mixing (FWM) and Heterodyne Four Wave Mixing (HFWM) experiments. This program also can be used for other purpose where you need retro-mirror to change the delay path as in case of Optical Coherence Imaging (OCI).</Property>
             <Property Name="Bld_buildSpecName" Type="Str">AD-Spectrometry</Property>
-            <Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-            <Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-            <Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
             <Property Name="Destination[0].destName" Type="Str">AD-Spectrometry.exe</Property>
             <Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/AD-Spectrometry/internal.llb</Property>
             <Property Name="Destination[0].type" Type="Str">App</Property>
             <Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
             <Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/AD-Spectrometry/data</Property>
             <Property Name="DestinationCount" Type="Int">2</Property>
-            <Property Name="Exe_iconItemID" Type="Ref">/My Computer/AD-Spectrometry-v1/Icon.ico</Property>
-            <Property Name="Source[0].itemID" Type="Str">{A9780EB5-83B7-4B18-A5C3-15747A84D008}</Property>
+            <Property Name="Exe_cmdLineArgs" Type="Bool">true</Property>
+            <Property Name="Exe_iconItemID" Type="Ref">/My Computer/AD-Spectrometry-v1.2.1/Icon.ico</Property>
+            <Property Name="Source[0].Container.applyDestination" Type="Bool">true</Property>
+            <Property Name="Source[0].destinationIndex" Type="Int">0</Property>
+            <Property Name="Source[0].itemID" Type="Str">{32441F9B-CD11-4A29-8782-3AC469951BD1}</Property>
             <Property Name="Source[0].type" Type="Str">Container</Property>
             <Property Name="Source[1].destinationIndex" Type="Int">0</Property>
             <Property Name="Source[1].itemID" Type="Ref">/My Computer/LSCI 330 Status Setpoint.vi</Property>
@@ -172,37 +172,28 @@
             <Property Name="Source[10].destinationIndex" Type="Int">0</Property>
             <Property Name="Source[10].itemID" Type="Ref">/My Computer/AD-Spectrometry-v1/teee.pdf</Property>
             <Property Name="Source[10].sourceInclusion" Type="Str">Include</Property>
-            <Property Name="Source[11].destinationIndex" Type="Int">0</Property>
-            <Property Name="Source[11].itemID" Type="Ref">/My Computer/AD-Spectrometry-v1/AD-Spectrometry-v1.2.1.vi</Property>
-            <Property Name="Source[11].sourceInclusion" Type="Str">TopLevel</Property>
-            <Property Name="Source[11].type" Type="Str">VI</Property>
+            <Property Name="Source[2].Container.applyInclusion" Type="Bool">true</Property>
             <Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-            <Property Name="Source[2].itemID" Type="Ref">/My Computer/AD-Spectrometry-v1/AD-Spectrometry-v1.vi</Property>
-            <Property Name="Source[2].type" Type="Str">VI</Property>
-            <Property Name="Source[3].Container.applyInclusion" Type="Bool">true</Property>
+            <Property Name="Source[2].itemID" Type="Ref">/My Computer/AD-Spectrometry-v1.2.1/Sub VIs</Property>
+            <Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+            <Property Name="Source[2].type" Type="Str">Container</Property>
             <Property Name="Source[3].destinationIndex" Type="Int">0</Property>
-            <Property Name="Source[3].itemID" Type="Ref">/My Computer/AD-Spectrometry-v1/Sub VIs</Property>
-            <Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
-            <Property Name="Source[3].type" Type="Str">Container</Property>
+            <Property Name="Source[3].itemID" Type="Ref">/My Computer/AD-Spectrometry-v1.2.1/AD-Spectrometry-v1.2.1.vi</Property>
+            <Property Name="Source[3].sourceInclusion" Type="Str">TopLevel</Property>
+            <Property Name="Source[3].type" Type="Str">VI</Property>
             <Property Name="Source[4].destinationIndex" Type="Int">0</Property>
-            <Property Name="Source[4].itemID" Type="Ref">/My Computer/AD-Spectrometry-v1/AD-Spectrometry.aliases</Property>
+            <Property Name="Source[4].itemID" Type="Ref">/My Computer/AD-Spectrometry-v1.2.1/Icon.ico</Property>
             <Property Name="Source[4].sourceInclusion" Type="Str">Include</Property>
             <Property Name="Source[5].destinationIndex" Type="Int">0</Property>
-            <Property Name="Source[5].itemID" Type="Ref">/My Computer/AD-Spectrometry-v1/AD-Spectrometry.lvproj</Property>
+            <Property Name="Source[5].itemID" Type="Ref">/My Computer/AD-Spectrometry-v1.2.1/teee.pdf</Property>
             <Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
-            <Property Name="Source[6].destinationIndex" Type="Int">0</Property>
-            <Property Name="Source[6].itemID" Type="Ref">/My Computer/AD-Spectrometry-v1/Icon-1.psd</Property>
-            <Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
-            <Property Name="Source[7].destinationIndex" Type="Int">0</Property>
-            <Property Name="Source[7].itemID" Type="Ref">/My Computer/AD-Spectrometry-v1/Icon.ico</Property>
-            <Property Name="Source[7].sourceInclusion" Type="Str">Include</Property>
             <Property Name="Source[8].destinationIndex" Type="Int">0</Property>
             <Property Name="Source[8].itemID" Type="Ref">/My Computer/AD-Spectrometry-v1/Icon.png</Property>
             <Property Name="Source[8].sourceInclusion" Type="Str">Include</Property>
             <Property Name="Source[9].destinationIndex" Type="Int">0</Property>
             <Property Name="Source[9].itemID" Type="Ref">/My Computer/AD-Spectrometry-v1/Icon.psd</Property>
             <Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
-            <Property Name="SourceCount" Type="Int">12</Property>
+            <Property Name="SourceCount" Type="Int">6</Property>
          </Item>
       </Item>
    </Item>
