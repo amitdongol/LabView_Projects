@@ -1,0 +1,1 @@
+This is the Manual for AD-Spectrometry.
