@@ -119,6 +119,12 @@
             <Item Name="Wait On ActiveX Event.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/ax-events.llb/Wait On ActiveX Event.vi"/>
             <Item Name="OccFireType.ctl" Type="VI" URL="/&lt;vilib&gt;/platform/ax-events.llb/OccFireType.ctl"/>
             <Item Name="Waveform Array To Dynamic.vi" Type="VI" URL="/&lt;vilib&gt;/express/express shared/transition.llb/Waveform Array To Dynamic.vi"/>
+            <Item Name="Write JPEG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Write JPEG File.vi"/>
+            <Item Name="Check Data Size.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check Data Size.vi"/>
+            <Item Name="Check Color Table Size.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check Color Table Size.vi"/>
+            <Item Name="Check Path.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check Path.vi"/>
+            <Item Name="Directory of Top Level VI.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Directory of Top Level VI.vi"/>
+            <Item Name="Check File Permissions.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check File Permissions.vi"/>
          </Item>
          <Item Name="instr.lib" Type="Folder">
             <Item Name="LSCI 330 Initialize.vi" Type="VI" URL="/&lt;instrlib&gt;/LakeShore Temperature Controller/lsci330/lsci330.llb/LSCI 330 Initialize.vi"/>
@@ -127,9 +133,9 @@
             <Item Name="LSCI 330 Config Control Parameters.vi" Type="VI" URL="/&lt;instrlib&gt;/LakeShore Temperature Controller/lsci330/lsci330.llb/LSCI 330 Config Control Parameters.vi"/>
             <Item Name="LSCI 330 Data Sensor.vi" Type="VI" URL="/&lt;instrlib&gt;/LakeShore Temperature Controller/lsci330/lsci330.llb/LSCI 330 Data Sensor.vi"/>
             <Item Name="LSCI 330 Data Heater Output.vi" Type="VI" URL="/&lt;instrlib&gt;/LakeShore Temperature Controller/lsci330/lsci330.llb/LSCI 330 Data Heater Output.vi"/>
-            <Item Name="LSCI 330 Serial Write.vi" Type="VI" URL="/&lt;instrlib&gt;/LakeShore Temperature Controller/lsci330/Lsci330u.llb/LSCI 330 Serial Write.vi"/>
             <Item Name="LSCI 330 Reset.vi" Type="VI" URL="/&lt;instrlib&gt;/LakeShore Temperature Controller/lsci330/lsci330.llb/LSCI 330 Reset.vi"/>
-            <Item Name="LSCI 330 Utility Clean Up Initialize.vi" Type="VI" URL="/&lt;instrlib&gt;/LakeShore Temperature Controller/lsci330/Lsci330u.llb/LSCI 330 Utility Clean Up Initialize.vi"/>
+            <Item Name="LSCI 330 Serial Write.vi" Type="VI" URL="/&lt;instrlib&gt;/LakeShore Temperature Controller/lsci330/lsci330.llb/LSCI 330 Serial Write.vi"/>
+            <Item Name="LSCI 330 Utility Clean Up Initialize.vi" Type="VI" URL="/&lt;instrlib&gt;/LakeShore Temperature Controller/lsci330/lsci330.llb/LSCI 330 Utility Clean Up Initialize.vi"/>
          </Item>
          <Item Name="Command Set Database.GBL" Type="VI" URL="Sub VIs/lvmonos_LV7.1_all GPIB and RS232/Isa_comm.llb/Command Set Database.GBL"/>
          <Item Name="Advapi32.dll" Type="Document" URL="Advapi32.dll"/>
