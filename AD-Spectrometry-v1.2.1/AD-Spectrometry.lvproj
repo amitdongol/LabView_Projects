@@ -140,6 +140,10 @@
          <Item Name="Command Set Database.GBL" Type="VI" URL="Sub VIs/lvmonos_LV7.1_all GPIB and RS232/Isa_comm.llb/Command Set Database.GBL"/>
          <Item Name="Advapi32.dll" Type="Document" URL="Advapi32.dll"/>
          <Item Name="kernel32.dll" Type="Document" URL="kernel32.dll"/>
+         <Item Name="RegOpen" Type="VI" URL="RegOpen"/>
+         <Item Name="systemexec" Type="VI" URL="systemexec"/>
+         <Item Name="Spectrometer Status.GBL" Type="VI" URL="Sub VIs/lvmonos_LV7.1_all GPIB and RS232/Isa_user.llb/Spectrometer Status.GBL"/>
+         <Item Name="SPECTROMETER SETUP.GBL" Type="VI" URL="Sub VIs/lvmonos_LV7.1_all GPIB and RS232/Isa_user.llb/SPECTROMETER SETUP.GBL"/>
       </Item>
       <Item Name="Build Specifications" Type="Build">
          <Item Name="AD-Spectrometry" Type="EXE">
