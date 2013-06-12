@@ -142,8 +142,6 @@
          <Item Name="SPECTROMETER SETUP.GBL" Type="VI" URL="Sub VIs/lvmonos_LV7.1_all GPIB and RS232/Isa_user.llb/SPECTROMETER SETUP.GBL"/>
          <Item Name="Advapi32.dll" Type="Document" URL="Advapi32.dll"/>
          <Item Name="kernel32.dll" Type="Document" URL="kernel32.dll"/>
-         <Item Name="RegOpen" Type="VI" URL="RegOpen"/>
-         <Item Name="systemexec" Type="VI" URL="systemexec"/>
       </Item>
       <Item Name="Build Specifications" Type="Build">
          <Item Name="AD-Spectrometry" Type="EXE">
@@ -202,6 +200,34 @@
             <Property Name="Source[9].itemID" Type="Ref">/My Computer/AD-Spectrometry-v1/Icon.psd</Property>
             <Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
             <Property Name="SourceCount" Type="Int">6</Property>
+         </Item>
+         <Item Name="AD-Spectroscopy-Source-Distribution" Type="Source Distribution">
+            <Property Name="Bld_buildSpecName" Type="Str">AD-Spectroscopy-Source-Distribution</Property>
+            <Property Name="Bld_excludedDirectory[0]" Type="Path">vi.lib</Property>
+            <Property Name="Bld_excludedDirectory[0].pathType" Type="Str">relativeToAppDir</Property>
+            <Property Name="Bld_excludedDirectory[1]" Type="Path">instr.lib</Property>
+            <Property Name="Bld_excludedDirectory[1].pathType" Type="Str">relativeToAppDir</Property>
+            <Property Name="Bld_excludedDirectory[2]" Type="Path">user.lib</Property>
+            <Property Name="Bld_excludedDirectory[2].pathType" Type="Str">relativeToAppDir</Property>
+            <Property Name="Bld_excludedDirectoryCount" Type="Int">3</Property>
+            <Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
+            <Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/AD-Spectroscopy-Source-Distribution.llb</Property>
+            <Property Name="Destination[0].type" Type="Str">LLB</Property>
+            <Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+            <Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/AD-Spectroscopy-Source-Distribution/data</Property>
+            <Property Name="DestinationCount" Type="Int">2</Property>
+            <Property Name="Source[0].itemID" Type="Str">{D9CABBE4-ABDB-4128-B7C1-34A82939CB6E}</Property>
+            <Property Name="Source[0].type" Type="Str">Container</Property>
+            <Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
+            <Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+            <Property Name="Source[1].itemID" Type="Ref">/My Computer/AD-Spectrometry-v1.2.1</Property>
+            <Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
+            <Property Name="Source[1].type" Type="Str">Container</Property>
+            <Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+            <Property Name="Source[2].itemID" Type="Ref">/My Computer/LSCI 330 Status Setpoint.vi</Property>
+            <Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+            <Property Name="Source[2].type" Type="Str">VI</Property>
+            <Property Name="SourceCount" Type="Int">3</Property>
          </Item>
       </Item>
    </Item>
